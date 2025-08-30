@@ -2,7 +2,7 @@ import axios from "axios";
 
 const api = axios.create({
   // baseURL: "http://localhost:5000/api",
-  baseURL: `${backend_url}/api`,
+  baseURL: `${process.env.backend_url}/api`,
 });
 
 // Interceptor to attach token automatically
