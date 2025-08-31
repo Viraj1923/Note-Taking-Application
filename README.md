@@ -1,6 +1,5 @@
 
 
----
 
 ```markdown
 # 📝 Note Taking Application
@@ -189,5 +188,5 @@ VITE_API_URL=https://your-backend.vercel.app
 
 ```
 
----
+
 
