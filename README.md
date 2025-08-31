@@ -176,9 +176,9 @@ VITE_API_URL=https://your-backend.vercel.app
 
 ---
 
-## 📸 Screenshots
+## 🎥 Demo Video
+[![Watch the Demo](https://i.ibb.co/your-thumbnail.png)](https://drive.google.com/file/d/1UrWJRL7qPpcJz5-LabZyOt6wbjwvTe38/view?usp=sharing)
 
-(Add screenshots of Signup, Login, Dashboard, Notes page here)
 
 ---
 
