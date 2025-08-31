@@ -1,7 +1,6 @@
 
 
 
-```markdown
 # 📝 Note Taking Application
 
 A full-stack note-taking web application where users can **sign up, log in, and manage personal notes**.  
@@ -186,7 +185,7 @@ VITE_API_URL=https://your-backend.vercel.app
 ## 📄 By Viraj Mulik
 
 
-```
+
 
 
 
