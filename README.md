@@ -7,6 +7,12 @@ A full-stack note-taking web application where users can **sign up, log in, and 
 Built with **React (Vite)** for the frontend, **Node.js + Express** for the backend, and **MongoDB** as the database.  
 Authentication uses **JWT**. The OTP system is implemented as a **mock flow** where OTP is shown in the app using a Toastify notification (not real SMS/Email).
 
+---
+> ⚠️ **Note:**  
+> - The backend is hosted on **Render Free Tier**, so the **first response may take 30–50 seconds** due to cold start.  
+> - After the first load, the app will work smoothly.  
+> - OTP in signup/login is a **mock system** → it appears as a **Toastify notification**.  
+> - If OTP does not appear, refresh the page and try again.
 
 ---
 
@@ -113,7 +119,7 @@ frontend-vite/
 
 ### 1. Clone Repo
 ```bash
-git clone https://github.com/<your-username>/note-taking-app.git
+git clone https://github.com/Viraj1923/Note-Taking-Application.git
 cd note-taking-app
 ````
 
