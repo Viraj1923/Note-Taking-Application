@@ -1,7 +1,4 @@
-Perfect 🚀 thanks for sharing the **backend + frontend folder structures**.
-This helps me tailor the **README.md** exactly to your project layout.
 
-Here’s a **clean README** ready for your Note Taking Application repo 👇
 
 ---
 
@@ -10,23 +7,23 @@ Here’s a **clean README** ready for your Note Taking Application repo 👇
 
 A full-stack note-taking web application where users can **sign up, log in, and manage personal notes**.  
 Built with **React (Vite)** for the frontend, **Node.js + Express** for the backend, and **MongoDB** as the database.  
-Authentication uses **JWT** with both **Email + OTP flow** and optional **Google login**.
+Authentication uses **JWT**. The OTP system is implemented as a **mock flow** where OTP is shown in the app using a Toastify notification (not real SMS/Email).
+
 
 ---
 
 ## 🚀 Live Demo
-- **Frontend (Vercel):** https://your-frontend.vercel.app  
-- **Backend (Vercel/Render/Railway):** https://your-backend.vercel.app  
+- **Frontend (Vercel):** https://note-taking-application-frontend.vercel.app  
+- **Backend (Render):** https://note-taking-application-backend-4yi7.onrender.com 
 - **Demo Credentials:**  
-  - Email: `test@demo.com`  
-  - Password: `Test@1234`
+  - Email: `hk1212@gmail.com`  
+  - Password: `hk1212`
 
 ---
 
 ## ✨ Features
 - 🔐 **Authentication**
-  - Email + OTP signup flow
-  - Google OAuth login/signup
+  - Email + OTP signup/login flow(OTP shown as Toastify notification for demo)
   - Input validation & error messages
 - 🧑 **User Dashboard**
   - Welcome page after signup/login
@@ -53,12 +50,11 @@ Authentication uses **JWT** with both **Email + OTP flow** and optional **Google
 **Backend (Node + Express)**  
 - MongoDB (Mongoose models: `User`, `Note`, `Otp`)
 - JWT Authentication
-- Nodemailer for OTP
-- Google OAuth (optional)
+- OTP (via Toastify, no real email/SMS)
 
 **Deployment**  
 - Frontend: Vercel  
-- Backend: Vercel / Render / Railway  
+- Backend:  Render 
 - Database: MongoDB Atlas  
 
 ---
@@ -108,6 +104,8 @@ frontend-vite/
 │── package.json
 │── vite.config.js
 │── vercel.json
+│── index.html
+
 
 ````
 
@@ -125,9 +123,9 @@ cd note-taking-app
 
 ```bash
 cd backend
-cp .env.example .env    # Add DB_URI, JWT_SECRET, MAIL config
+cp .env.example .env    # Add DB_URI, JWT_SECRET
 npm install
-npm run dev
+npm start 
 ```
 
 ### 3. Frontend Setup
@@ -149,10 +147,6 @@ npm run dev
 PORT=5000
 DB_URI=<your-mongodb-uri>
 JWT_SECRET=<your-secret>
-EMAIL_USER=<your-email>
-EMAIL_PASS=<your-app-password>
-GOOGLE_CLIENT_ID=<client-id>
-GOOGLE_CLIENT_SECRET=<client-secret>
 ```
 
 ### Frontend (`/frontend-vite/.env`)
@@ -169,7 +163,6 @@ VITE_API_URL=https://your-backend.vercel.app
 
 * `POST /api/auth/signup` → Sign up with email + OTP
 * `POST /api/auth/login` → Login with email/password
-* `POST /api/auth/google` → Google OAuth login
 
 ### Notes (JWT Protected)
 
@@ -187,20 +180,14 @@ VITE_API_URL=https://your-backend.vercel.app
 
 ## 📌 Known Limitations
 
-* Google OAuth requires proper Google Cloud setup
-* OTP delivery depends on SMTP configuration
+* OTP system is mocked → OTP appears in-app via Toastify notification.
 
 ---
 
-## 📄 License
+## 📄 By Viraj Mulik
 
-MIT License © 2025 \[Your Name]
 
 ```
 
 ---
 
-👉 This README matches your **actual folder structure** (backend + frontend-vite).  
-
-Do you want me to also prepare a **short README.md just for the frontend** (since you’re deploying frontend separately on Vercel with `frontend-vite/` as root)?
-```
